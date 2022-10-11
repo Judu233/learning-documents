@@ -1,0 +1,37 @@
+{
+  "name": "my-learning-documents",
+  "version": "1.0.0",
+  "description": "一些学习，教程，总结文档",
+  "author": "judu233",
+  "main": "service.js",
+  "bin": "service.js",
+  "pkg": {
+    "outputPath": "dist",
+    "scripts": [
+      "js/**/*"
+    ],
+    "assets": [
+      "docs/**/*",
+      "css/**/*",
+      "_coverpage.md",
+      "_sidebar.md",
+      "_navbar.md",
+      "bg.jpg",
+      "index.html",
+      "README.md"
+    ]
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "quick-serve": "docsify serve",
+    "dev-service": "node service.js",
+    "pkg": "pkg . -t win"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/juduSence/my-learning-documents.git"
+  },
+  "license": "ISC"
+}
